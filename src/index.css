@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Dekko&family=Itim&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dekko", cursive;
+}
+
+:root {
+  --background-color: #ece4f2cd;
+  --secondary-color: #a4e6f0;
+  --secondary-color-2: #7c81ad;
+  --link-color: #4c6185;
+  --text-color: black;
+  --text-color-header: #7a4892;
+}
+
+body {
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.333rem;
+}
+
+small,
+.text_small {
+  font-size: 0.75rem;
+}
+
+.svg16 {
+  height: 1em;
+  width: 1em;
+}
+
+.svg32 {
+  height: 2em;
+  width: 2em;
+}
+
+.svg48 {
+  height: 3em;
+  width: 3em;
+}
+.svg64 {
+  height: 4em;
+  width: 4em;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.1rem; /* 24px */
+  }
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.125rem; /* 24px */
+  }
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.15rem; /* 24px */
+  }
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 1.2rem; /* 32px */
+  }
+  .container {
+    max-width: 1320px;
+  }
+}

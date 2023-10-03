@@ -1,0 +1,126 @@
+.home-route {
+  background: url("./../../assets/hero-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5em;
+
+  .home-route-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--background-color);
+    border-radius: 1em;
+
+    .titles-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 3em;
+      text-align: center;
+
+      .main-title {
+        margin-bottom: 1em;
+      }
+    }
+
+    .home-route-main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .auth-form-section {
+        .auth-form-container {
+          /* From https://css.glass */
+          background: rgba(255, 255, 255, 0.48);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(6px);
+          -webkit-backdrop-filter: blur(6px);
+          border: 1px solid rgba(255, 255, 255, 0.83);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          min-width: 22em;
+
+          width: 100%;
+          padding: 1.5em;
+
+          .auth-form-titles {
+            text-align: center;
+            margin: 1.5em 0;
+
+            .auth-span-link {
+              color: var(--link-color);
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+          .auth-form {
+            display: flex;
+            flex-direction: column;
+
+            .form-input {
+              margin-bottom: 1em;
+            }
+
+            .form-submit-section {
+              display: flex;
+              justify-content: center;
+              margin: 1em 0 2em;
+            }
+          }
+        }
+
+        .auth-social-media-container {
+          .auth-social-media-buttons {
+            margin-top: 1em;
+
+            display: flex;
+            justify-content: center;
+          }
+
+          .errorMessage-container {
+            padding: 1em;
+            color: #99081e;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .home-route {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-route {
+    display: flex;
+    gap: 3em;
+    /* flex-direction: row; */
+    /*   .titles-container {
+      align-items: flex-end;
+      .char-img {
+        display: block;
+      }
+    } */
+
+    /*  .home-route-main-content {
+      justify-content: flex-start;
+    } */
+  }
+}

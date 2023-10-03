@@ -1,0 +1,22 @@
+.btn-form-container {
+  .btn-form {
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0.5em;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: var(--secondary-color-2);
+      border-radius: 0.5em;
+    }
+
+    &:active {
+      background-color: var(--secondary-color-2);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.social-media-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+  &:active {
+    background-color: var(--link-color);
+  }
+}

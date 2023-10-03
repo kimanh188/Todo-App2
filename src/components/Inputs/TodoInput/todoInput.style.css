@@ -1,0 +1,21 @@
+.todo-input {
+  padding: 0.7em;
+  border-radius: 0.5em 0 0 0.5em;
+  border: none;
+  width: 90%;
+}
+.todo-btn {
+  border: none;
+  border-left: 2px solid #3f4085;
+  height: 100%;
+  padding: 0 1em;
+  border-radius: 0 0.5em 0.5em 0;
+
+  background-color: #3f4085;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #15165d;
+  }
+}
