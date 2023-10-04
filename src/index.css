@@ -60,8 +60,12 @@ small,
   width: 3em;
 }
 .svg64 {
-  height: 4em;
-  width: 4em;
+  height: 3.5em;
+  width: 3.5em;
+}
+
+.svg64 path {
+  fill: var(--text-color-header);
 }
 
 .container {

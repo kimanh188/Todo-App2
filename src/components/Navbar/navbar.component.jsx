@@ -8,7 +8,7 @@ export function NavbarComponent({ username, onClickHandler }) {
   return (
     <nav className={"navbar"}>
       <div className={"nav-left-side"}>
-        <p>Hello, {username || "Unknown"}!</p>
+        <p>Hello, {username || "Guest"}!</p>
       </div>
 
       <div className="nav-center">

@@ -12,8 +12,8 @@ export function TodoInputComponent({ todo, onChangeHandler }) {
         onChange={onChangeHandler}
         className={"todo-input"}
         type={"text"}
-        placeholder={todo.title}
-        name={"todotitle"}
+        placeholder={"What's on your mind, taskmaster?"}
+        name={todo.title}
         aria-label={"Schreibe hier dein Todo rein"}
       />
       <button

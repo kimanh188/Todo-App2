@@ -6,12 +6,11 @@
 }
 .todo-btn {
   border: none;
-  border-left: 2px solid #3f4085;
   height: 100%;
   padding: 0 1em;
   border-radius: 0 0.5em 0.5em 0;
 
-  background-color: #3f4085;
+  background-color: var(--text-color-header);
   color: white;
   cursor: pointer;
 

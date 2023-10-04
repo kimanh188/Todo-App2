@@ -12,11 +12,26 @@ export function TodoView({ todos, onUserActionHandler }) {
       <section className={"todo-route"}>
         <section className={"navbar-container"}>
           <NavbarComponent
-            username={"Markus"}
+            username={""}
             onClickHandler={onUserActionHandler.logout}
           />
         </section>
         <div className={"todo-route-content"}>
+          <section className="todo-overview">
+            <div className="todo-count">
+              <h2>Todo</h2>
+              <p className="count">
+                {todos.filter((todo) => !todo.done).length}
+              </p>
+            </div>
+            <section
+              onClick={onUserActionHandler.add}
+              className={"todo-add-button-container"}
+            >
+              <BtnAddTodoComponent onClickHandler={onUserActionHandler.add} />
+            </section>
+          </section>
+
           <section className={"todos-container container"}>
             {todos.length === 0 ? (
               <NoTodosComponent />
@@ -31,12 +46,6 @@ export function TodoView({ todos, onUserActionHandler }) {
                 );
               })
             )}
-          </section>
-          <section
-            onClick={onUserActionHandler.add}
-            className={"todo-add-button-container"}
-          >
-            <BtnAddTodoComponent onClickHandler={onUserActionHandler.add} />
           </section>
         </div>
       </section>

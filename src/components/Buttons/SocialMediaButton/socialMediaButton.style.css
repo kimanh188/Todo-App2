@@ -3,15 +3,15 @@
   justify-content: center;
   align-items: center;
   padding: 0.5em;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: antiquewhite;
   transition: all 0.2s;
   cursor: pointer;
 
   &:hover {
-    background-color: var(--secondary-color);
+    background-color: #3f3f84;
   }
   &:active {
-    background-color: var(--link-color);
+    background-color: #5152b4;
   }
 }

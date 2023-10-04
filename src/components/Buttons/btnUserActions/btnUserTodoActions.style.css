@@ -9,6 +9,6 @@
   transition: all 0.2s;
 
   &:hover {
-    background-color: #8384e9;
+    background-color: var(--secondary-color);
   }
 }
