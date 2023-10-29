@@ -4,6 +4,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -29,6 +31,10 @@
 
       .main-title {
         margin-bottom: 1em;
+        font-size: 1.953rem;
+      }
+      .main-slogan {
+        font-size: 0.8rem;
       }
     }
 
@@ -103,7 +109,19 @@
 
 @media (min-width: 576px) {
   .home-route {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+
+    .home-route-wrapper {
+      .titles-container {
+        .main-title {
+          font-size: 2.441rem;
+        }
+        .main-slogan {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
 
@@ -111,16 +129,16 @@
   .home-route {
     display: flex;
     gap: 3em;
-    /* flex-direction: row; */
-    /*   .titles-container {
-      align-items: flex-end;
-      .char-img {
-        display: block;
-      }
-    } */
 
-    /*  .home-route-main-content {
-      justify-content: flex-start;
-    } */
+    .home-route-wrapper {
+      .titles-container {
+        .main-title {
+          font-size: 3.052rem;
+        }
+        .main-slogan {
+          font-size: 1.25rem;
+        }
+      }
+    }
   }
 }

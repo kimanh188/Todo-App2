@@ -31,10 +31,10 @@ export function DateComponent() {
   const currentMonth = months[currentTime.getMonth()];
 
   return (
-    <>
+    <div className="date-component">
       <h2 className="date-display">
         {currentDay}, {currentDate}. {currentMonth}
       </h2>
-    </>
+    </div>
   );
 }

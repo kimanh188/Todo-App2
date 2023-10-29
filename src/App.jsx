@@ -8,18 +8,16 @@ import {
 import { HomeContainer } from "./routes/Home/home.container.jsx";
 import { TodoContainer } from "./routes/Todos/todo.container.jsx";
 import { TodosContextProvider } from "./contexts/todo.context.jsx";
-import { FooterWrapper } from "./components/FooterWrapper/footer.wrapper.jsx";
+
 import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route element={<FooterWrapper />}>
-        <Route path={"/"}>
-          <Route index element={<HomeContainer />} />
-          <Route path={"/home"} element={<HomeContainer />} />
-          {/* <Route path={"/login"} element={<LoginContainer} /> */}
-        </Route>
+      <Route path={"/"}>
+        <Route index element={<HomeContainer />} />
+        <Route path={"/home"} element={<HomeContainer />} />
+        {/* <Route path={"/login"} element={<LoginContainer} /> */}
       </Route>
       <Route
         path={"/todos"}
@@ -29,9 +27,8 @@ const router = createBrowserRouter(
           </TodosContextProvider>
         }
       />
-      <Route element={<FooterWrapper />}>
-        <Route path={"*"} element={"Dies ist ein 404 Error"} />
-      </Route>
+
+      <Route path={"*"} element={"Dies ist ein 404 Error"} />
     </>
   )
 );

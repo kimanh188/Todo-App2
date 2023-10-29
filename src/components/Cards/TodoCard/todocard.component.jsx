@@ -8,7 +8,7 @@ export function TodocardComponent({ todo, onUserActionHandler }) {
   const [isEdit, setIsEdit] = useState(false);
   const { state, dispatch } = useContext(TodosContext);
 
-  /*  Triggert den Input wenn title von Todos "New Todo" ist */
+  /*  Triggers the input when title of todos is "New Todo" */
   useEffect(() => {
     if (todo.title === "New Todo") {
       setIsEdit(true);

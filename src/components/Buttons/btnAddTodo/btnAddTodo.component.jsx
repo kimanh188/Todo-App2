@@ -1,7 +1,7 @@
 import { SVGAdd } from "../../../svgController/svgController.jsx";
 
 export function BtnAddTodoComponent() {
-  //Benötigt keinen onClickHandler da diese Componente in eine Section gewickelt wird, auf den der Listener gesetzt wird
+  //Doesn't need onClickHandler because this component is wrapped in a section, on which the listener is set
   return (
     <button className={"btn-userTodoAction"}>
       <SVGAdd classNames={"svg64"} />

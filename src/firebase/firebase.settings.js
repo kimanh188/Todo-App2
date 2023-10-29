@@ -1,9 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 
-// Your web app's Firebase configuration
+// web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBHqdm07Rk6ZWdtQXYqI2lEO7Y1MZybTQA",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "todo-app-4db8a.firebaseapp.com",
   projectId: "todo-app-4db8a",
   storageBucket: "todo-app-4db8a.appspot.com",

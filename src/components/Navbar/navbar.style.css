@@ -22,3 +22,9 @@
     cursor: pointer;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    font-size: 1.25em;
+  }
+}

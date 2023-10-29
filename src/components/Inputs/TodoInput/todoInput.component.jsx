@@ -14,7 +14,7 @@ export function TodoInputComponent({ todo, onChangeHandler }) {
         type={"text"}
         placeholder={"What's on your mind, taskmaster?"}
         name={todo.title}
-        aria-label={"Schreibe hier dein Todo rein"}
+        aria-label={"Write your todo here"}
       />
       <button
         onClick={(event) => {

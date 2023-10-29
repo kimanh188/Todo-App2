@@ -3,33 +3,6 @@ import EditSVG from "./../svgs/edit.svg?react";
 import DeleteSVG from "./../svgs/delete.svg?react";
 import AddSVG from "./../svgs/add.svg?react";
 import GoogleSVG from "./../svgs/google.svg?react";
-import GithubSVG from "./../svgs/github.svg?react";
-import InstagramSVG from "./../svgs/instagram.svg?react";
-import TwitterSVG from "./../svgs/twitter-x.svg?react";
-
-export function SVGGithub({ classNames, onclickHandler }) {
-  return (
-    <>
-      <GithubSVG onClick={onclickHandler} className={` ${classNames}`} />
-    </>
-  );
-}
-
-export function SVGInstagram({ classNames, onclickHandler }) {
-  return (
-    <>
-      <InstagramSVG onClick={onclickHandler} className={` ${classNames}`} />
-    </>
-  );
-}
-
-export function SVGTwitter({ classNames, onclickHandler }) {
-  return (
-    <>
-      <TwitterSVG onClick={onclickHandler} className={` ${classNames}`} />
-    </>
-  );
-}
 
 export function SVGGoogle({ classNames, onclickHandler }) {
   return (
@@ -76,18 +49,6 @@ SVGEdit.propTypes = {
   onclickHandler: PropTypes.func,
 };
 SVGGoogle.propTypes = {
-  classNames: PropTypes.string.isRequired,
-  onclickHandler: PropTypes.func,
-};
-SVGGithub.propTypes = {
-  classNames: PropTypes.string.isRequired,
-  onclickHandler: PropTypes.func,
-};
-SVGInstagram.propTypes = {
-  classNames: PropTypes.string.isRequired,
-  onclickHandler: PropTypes.func,
-};
-SVGTwitter.propTypes = {
   classNames: PropTypes.string.isRequired,
   onclickHandler: PropTypes.func,
 };

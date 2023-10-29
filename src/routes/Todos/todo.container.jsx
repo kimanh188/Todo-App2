@@ -57,6 +57,7 @@ export function TodoContainer() {
       <Helmet title={"Todo Flow - Dashboard"}></Helmet>
       <TodoView
         todos={state.todos}
+        currentUser={currentUser}
         onUserActionHandler={{
           add: onTodoAddHandler,
           delete: onTodoDeleteHandler,

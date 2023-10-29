@@ -1,8 +1,12 @@
 .todo-input {
-  padding: 0.7em;
+  padding: 0.5em;
   border-radius: 0.5em 0 0 0.5em;
   border: none;
   width: 90%;
+
+  &:focus {
+    outline: none;
+  }
 }
 .todo-btn {
   border: none;

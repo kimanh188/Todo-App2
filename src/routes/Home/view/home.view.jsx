@@ -6,6 +6,7 @@ import { SVGGoogle } from "../../../svgController/svgController.jsx";
 import { InputLoginAndRegisterComponent } from "../../../components/Inputs/LoginAndRegister/inputLoginAndRegister.component";
 import { BtnFormComponent } from "../../../components/Buttons/FormButtons/btnForm.component.jsx";
 import { SocialMediaButtonComponent } from "../../../components/Buttons/SocialMediaButton/socialMediaButton.component.jsx";
+
 import { useState } from "react";
 
 export function HomeView({
@@ -25,10 +26,8 @@ export function HomeView({
       <section className="home-route">
         <div className="home-route-wrapper">
           <header className="titles-container container">
-            <div className={"titles"}>
-              <h1 className="main-title">Todo Flow</h1>
-              <h4>Pilot your tasks, navigate your day</h4>
-            </div>
+            <h1 className="main-title">Todo Flow</h1>
+            <h4 className="main-slogan">Pilot your tasks, navigate your day</h4>
           </header>
 
           <main className="home-route-main-content container">

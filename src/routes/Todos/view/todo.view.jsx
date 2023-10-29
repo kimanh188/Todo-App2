@@ -5,14 +5,14 @@ import { TodocardComponent } from "../../../components/Cards/TodoCard/todocard.c
 import { BtnAddTodoComponent } from "../../../components/Buttons/btnAddTodo/btnAddTodo.component.jsx";
 import { NoTodosComponent } from "../../../components/NoTodos/noTodos.component.jsx";
 
-export function TodoView({ todos, onUserActionHandler }) {
+export function TodoView({ todos, onUserActionHandler, currentUser }) {
   return (
     <>
       <div className={"todo-route-background"}></div>
       <section className={"todo-route"}>
         <section className={"navbar-container"}>
           <NavbarComponent
-            username={""}
+            username={currentUser ? currentUser.displayName : "Guest"}
             onClickHandler={onUserActionHandler.logout}
           />
         </section>
@@ -60,4 +60,5 @@ TodoView.propTypes = {
     delete: PropTypes.func.isRequired,
     logout: PropTypes.func.isRequired,
   }),
+  currentUser: PropTypes.object,
 };
