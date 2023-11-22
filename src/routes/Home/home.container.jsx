@@ -41,7 +41,7 @@ export function HomeContainer() {
       case !formValue.password:
         setErr("The Password field must not be empty");
         return;
-      case !formValue.password.length > 8:
+      case !(formValue.password.length >= 8):
         setErr("The password must be at least 8 characters");
         return;
       case !formValue.confirmPassword:
