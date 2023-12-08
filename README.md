@@ -14,13 +14,6 @@ This project is an upgraded version of my very first React project Todo-App – 
 
 This project utilizes the React framework and Vite, a modern build tool that offers a blazing-fast development experience.
 
-## Getting Started
-
-To experience the app, you can use the following credentials to log in:
-
-- **Email:** testuser.todo2@gmail.com
-- **Password:** test1234!
-
 ## Project Inspiration
 
 After I presented my initial Todo-App version (ToDo-App1), our teacher decided to embark on a similar project, sharing insights and guiding the development of a more advanced version. This experience provided me with a better grasp of using SVGs and introduced me to Firebase authentication, skills that I applied to enhance this project. While it is rooted in a course project, this work also reflects my own learnings and insights.
