@@ -4,13 +4,6 @@ This project is an upgraded version of my very first React project Todo-App – 
 
 [Live Site](https://todo-app2-alpha.vercel.app/)
 
-## Getting Started
-
-To experience the app, you can use the following credentials to log in:
-
-- **Email:** testuser.todo2@gmail.com
-- **Password:** test1234!
-
 ## Key Features
 
 - **Google Account Integration:** Users can seamlessly log in using their Google accounts, adding an extra layer of convenience to the todo management experience.
